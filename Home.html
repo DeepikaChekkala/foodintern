@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>University Management System </title>
+      <link rel="stylesheet" href="loginstyle.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+  <body>
+       <div class="wrapper">
+         <div class="title-text">
+            <div class="title login">
+               Home Login
+          </div>
+            <div class="title exam">
+               Signup
+            </div> 
+         </div>
+         <div class="form-container">
+            <div class="slide-controls">
+               <input type="radio" name="slide" id="login" checked>
+               <input type="radio" name="slide" id="exam">
+               <label for="login" class="slide login">Login</label>
+               <label for="exam" class="slide exam">Signup</label>
+               <div class="slider-tab"></div>
+            </div>
+            <div class="form-inner">
+               <form action="intershala2.html" class="login">
+                  <div class="field">
+                     <input type="text" placeholder="user id" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" required>
+                  </div>
+                  <div class="pass-link">
+                     <a href="intershala2.html">visit without login</a>
+                  </div>
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Login">
+                  </div>
+                  <div class="sign-link">  <a href="intershala2.html">visit without login</a>
+                  </div>
+               </form>
+               <form action="#" class="exam">
+                  <div class="field">
+                     <input type="text" placeholder="user id" required>
+                  </div>
+                  <div class="field">
+                     <input type="password" placeholder="Password" required>
+                  </div> <br><br>
+
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit" value="Login">
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+      <script>
+         const loginText = document.querySelector(".title-text .login");
+         const loginForm = document.querySelector("form.login");
+         const loginBtn = document.querySelector("label.login");
+         const examBtn = document.querySelector("label.exam");
+         const examLink = document.querySelector("form .exam-link a");
+         examBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "-50%";
+           loginText.style.marginLeft = "-50%";
+         });
+         loginBtn.onclick = (()=>{
+           loginForm.style.marginLeft = "0%";
+           loginText.style.marginLeft = "0%";
+         });
+         examLink.onclick = (()=>{
+           examBtn.click();
+           return false;
+         });
+      </script>
+  </div>
+   </body>
+</html>
