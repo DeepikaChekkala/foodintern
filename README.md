@@ -1,1 +1,1 @@
-[Your link here ]{https://github.com/DeepikaChekkala/foodintern/intershala.html}
+[Your link here ]{https://deepikachekkala.github.io/foodintern/intershala.html}
